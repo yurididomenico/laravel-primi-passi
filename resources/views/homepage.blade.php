@@ -10,5 +10,7 @@
 
     <h1>Ciao!</h1>
 
+    <p>Sono {{$nome}} {{$cognome}}! E tu?</p>
+
 </body>
 </html>
