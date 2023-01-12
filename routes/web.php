@@ -16,6 +16,34 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $nome = "Yuri";
     $cognome = "Di Domenico";
+    $tipoPage = "Homepage";
 
-    return view('homepage', compact('nome', 'cognome'));
+    return view('homepage', compact('tipoPage', 'nome', 'cognome'));
 });
+
+Route::get('/foto', function () {
+    $nome = "Yuri";
+    $cognome = "Di Domenico";
+    $tipoPage = "Foto";
+
+    return view('foto', compact('tipoPage', 'nome', 'cognome'));
+});
+
+Route::get('/video', function () {
+    $nome = "Yuri";
+    $cognome = "Di Domenico";
+    $tipoPage = "Video";
+
+    return view('video', compact('tipoPage', 'nome', 'cognome'));
+});
+
+Route::get('/tutorial', function () {
+    $nome = "Yuri";
+    $cognome = "Di Domenico";
+    $tipoPage = "Tutorial";
+
+    return view('tutorial', compact('tipoPage', 'nome', 'cognome'));
+});
+
+
+
