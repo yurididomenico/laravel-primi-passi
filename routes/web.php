@@ -13,11 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
 Route::get('/', function () {
-    
-    $title = "Hello World!";
-
-    return view('helloworld', compact('title'));
+    return view('homepage');
 });
